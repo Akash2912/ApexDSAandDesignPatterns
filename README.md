@@ -38,4 +38,18 @@ for(integer n : arrayN){
 
 The complexity for above loop is O(n*m) not O(n^2)
 
+#**** Stack and Queues ***************************
+
+Stack : LIFO
+Queue : FIFO
+
+Has complexity of O(1)
+
+Linked Lists are often used in Stack and queues
+
+Stacks : Push --> head --> pop   LIFO
+
+Queues : add --> tail --> head --> remove : FIFO
+
+
 
