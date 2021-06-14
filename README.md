@@ -51,5 +51,10 @@ Stacks : Push --> head --> pop   LIFO
 
 Queues : add --> tail --> head --> remove : FIFO
 
+#*******************************************
+Binary Tree:
+Full Binary Tree : has 0 or two childrens
+Perfect Binary tree : have parents
+O(log n) runtime complexity
 
 
