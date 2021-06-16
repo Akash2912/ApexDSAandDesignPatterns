@@ -118,4 +118,27 @@ public with sharing class binaryTree {
             return node;
         }
     }
+
+    public void printPostOrderTraversal(){
+        postOrderTraversal(root);
+    }
+
+    private void postOrderTravesral(Node node){
+        if(node!=null)
+        {
+            postOrderTravesral(node.left);
+            postOrderTravesral(node.right);
+            system.debug(node.key);
+        }
+    }
+
+    public void printPreOrderTraversal(){preOrderTraversal(root);}
+
+    private void preOrderTraversal(Node node){
+        if(node!=null){
+            system.debug(node.key);
+            preOrderTraversal(node.left);
+            preOrderTraversal(node.right);
+        }
+    }
 }

@@ -52,9 +52,27 @@ Stacks : Push --> head --> pop   LIFO
 Queues : add --> tail --> head --> remove : FIFO
 
 #*******************************************
-Binary Tree:
+Binary Tree: Ordered and Recursive
 Full Binary Tree : has 0 or two childrens
 Perfect Binary tree : have parents
-O(log n) runtime complexity
+O(log n) runtime complexity , because every time we find any node in binary tree its halfing itself at each iteration
+
+#*********************************************
+
+Binary Heaps::
+
+Space efficient
+less code
+
+Examples: Routers
+          Shortest Path alogorithms
+
+#**********************************************
+
+Fibonacci Series: O(2^n)
+
+
+          
+
 
 
