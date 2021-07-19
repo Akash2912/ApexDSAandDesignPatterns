@@ -153,3 +153,10 @@ list.push(3);
 list.push(4);
 list.push(5);
 console.log(list.pop());
+
+/*Complexity:
+insertion O(1);
+removal - O(1);
+searching - O(n);
+access - O(n);
+*/
