@@ -65,7 +65,70 @@ class BinarySearchTree {
             }
         }
     }
+    /*
+            10
+        6       15
+      3   8        20
+    */
+
+    //Breadth first Search
+    BFS(){
+        if(this.root === null){
+            return undefined;
+        }
+        var node = this.root,
+            data = [],
+            queue = [];
+        
+            //push the root node to queue
+            queue.push(node);
+            while(queue.length){
+                node = queue.shift();
+                data.push(node.value);
+                if(node.left) queue.push(node.left);
+                if(node.right) queue.push(node.right);
+            }
+            return data;
+    }
+    //data[10,6,15,3,8,20]
+
+    DFSPreOrder(){
+        var data = [];
+        function traverse(node){
+            data.push(node.value);
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+        }
+        traverse(this.root);
+
+        return data;
+    }
+    //data[10,6,3,8,15,20]
+
+    /*
+            10
+        6       15
+      3   8        20
+    */
+
+    DFSPostOrder(){
+        var data = [];
+        var current = this.root;
+
+        function traverse(node){
+            if(node.left) traverse(node.left);
+            if(node.right) traverse(node.right);
+            data.push(node.value);
+        }
+
+        traverse(current);
+    }
 }
+
+
+//queue[]
+//data[10,6,15,3,8,20]
+
 
 
 
